@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Antapro Bharata — Suplemen Herbal Pendukung Pemulihan Pasca Stroke</title>
+<meta name="description" content="Antapro Bharata, suplemen herbal ekstrak Centella asiatica untuk mendampingi proses pemulihan sehari-hari. BPOM TR223041501, Halal MUI. Bukan pengganti obat dokter.">
+<meta name="robots" content="index, follow">
+<style>
+  :root{
+    --teal-deep:#173F38;
+    --teal-mid:#2C5E54;
+    --sage:#7FA98E;
+    --sage-soft:#DCE9DF;
+    --sand:#F7F2E7;
+    --clay:#E1965E;
+    --clay-deep:#C97A3F;
+    --ink:#22302B;
+    --ink-soft:#54655F;
+    --white:#FFFFFF;
+    --radius-lg:22px;
+    --radius-md:14px;
+    --serif: Georgia, "Iowan Old Style", "Palatino Linotype", ui-serif, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    color:var(--ink);
+    background:var(--sand);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px;}
+  section{padding:64px 0;}
+  h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.15;margin:0 0 14px;color:var(--teal-deep);}
+  h1{font-size:clamp(28px,5.5vw,46px);}
+  h2{font-size:clamp(22px,4vw,32px);}
+  h3{font-size:clamp(17px,2.6vw,20px);}
+  p{margin:0 0 14px;color:var(--ink-soft);}
+  .eyebrow{
+    display:inline-block;
+    font-size:12.5px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    font-weight:700;
+    color:var(--clay-deep);
+    background:#FBEADA;
+    padding:6px 14px;
+    border-radius:999px;
+    margin-bottom:16px;
+  }
+
+  /* ---------- disclaimer bar ---------- */
+  .disclaimer-bar{
+    background:var(--teal-deep);
+    color:#CFE3DC;
+    font-size:12.5px;
+    text-align:center;
+    padding:9px 16px;
+  }
+  .disclaimer-bar strong{color:#fff;}
+
+  /* ---------- hero ---------- */
+  .hero{
+    background:linear-gradient(180deg,var(--sage-soft) 0%, var(--sand) 65%);
+    padding:44px 0 40px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero-badge-row{
+    display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px;
+  }
+  .badge{
+    display:inline-flex;align-items:center;gap:6px;
+    background:var(--white);
+    border:1px solid var(--sage);
+    color:var(--teal-mid);
+    font-size:12.5px;font-weight:600;
+    padding:6px 12px;border-radius:999px;
+  }
+  .hero-grid{
+    display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;
+  }
+  .hero h1 span{color:var(--clay-deep);}
+  .hero-lead{font-size:17px;max-width:52ch;}
+  .cta-primary{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--clay);
+    color:#fff;font-weight:700;font-size:16px;
+    padding:16px 26px;border-radius:999px;
+    text-decoration:none;
+    box-shadow:0 10px 24px -8px rgba(201,122,63,.55);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .cta-primary:hover{transform:translateY(-2px);box-shadow:0 14px 28px -8px rgba(201,122,63,.6);}
+  .cta-sub{font-size:13px;color:var(--ink-soft);margin-top:10px;}
+  .hero-stats{display:flex;gap:22px;margin-top:26px;flex-wrap:wrap;}
+  .hero-stat b{display:block;font-family:var(--serif);font-size:22px;color:var(--teal-deep);}
+  .hero-stat span{font-size:12.5px;color:var(--ink-soft);}
+  .hero-visual{
+    background:var(--white);
+    border-radius:var(--radius-lg);
+    padding:26px;
+    border:1px solid #E3DCC9;
+    box-shadow:0 20px 40px -20px rgba(23,63,56,.25);
+  }
+  .product-photo{
+    width:100%;
+    height:auto;
+    border-radius:16px;
+    display:block;
+    box-shadow:0 14px 30px -14px rgba(23,63,56,.35);
+  }
+  .photo-caption{
+    text-align:center;font-size:12.5px;color:var(--ink-soft);
+    margin-top:14px;
+  }
+
+  /* ---------- section: masalah/journey ---------- */
+  .journey{background:var(--white);}
+  .journey-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:34px;}
+  .journey-step{
+    background:var(--sand);
+    border-radius:var(--radius-md);
+    padding:22px 18px;
+    border:1px solid #EDE5D4;
+    position:relative;
+  }
+  .journey-step .phase{font-size:12px;font-weight:700;color:var(--sage);letter-spacing:.05em;text-transform:uppercase;margin-bottom:8px;}
+  .journey-step h3{margin-bottom:6px;font-size:16.5px;}
+  .journey-step p{font-size:14px;margin:0;}
+  .journey-note{
+    margin-top:28px;background:var(--sage-soft);border-radius:var(--radius-md);
+    padding:18px 22px;font-size:14.5px;color:var(--teal-deep);
+  }
+
+  /* ---------- product ---------- */
+  .product-section{background:var(--sage-soft);}
+  .product-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start;margin-top:20px;}
+  .fact-list{list-style:none;margin:0;padding:0;display:grid;gap:14px;}
+  .fact-list li{
+    background:var(--white);border-radius:var(--radius-md);padding:16px 18px;
+    display:flex;gap:14px;align-items:flex-start;border:1px solid #E3EEE6;
+  }
+  .fact-icon{
+    width:34px;height:34px;border-radius:10px;background:var(--teal-deep);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;
+  }
+  .fact-list b{display:block;color:var(--teal-deep);font-size:14.5px;}
+  .fact-list span{font-size:13.5px;color:var(--ink-soft);}
+  .legal-strip{
+    display:flex;gap:14px;flex-wrap:wrap;margin-top:22px;
+  }
+  .legal-chip{
+    background:var(--white);border:1px solid var(--sage);border-radius:12px;
+    padding:12px 16px;font-size:12.5px;flex:1;min-width:160px;
+  }
+  .legal-chip b{display:block;color:var(--teal-deep);font-size:13.5px;}
+
+  /* ---------- testimonials ---------- */
+  .testi{background:var(--white);}
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px;}
+  .testi-card{
+    background:var(--sand);border-radius:var(--radius-md);padding:22px;border:1px solid #EDE5D4;
+  }
+  .stars{color:var(--clay-deep);font-size:14px;margin-bottom:10px;}
+  .testi-card p{font-size:14.5px;color:var(--ink);margin-bottom:12px;}
+  .testi-name{font-size:13px;font-weight:700;color:var(--teal-deep);}
+  .testi-meta{font-size:12px;color:var(--ink-soft);}
+  .testi-disclaimer{font-size:12px;color:var(--ink-soft);margin-top:20px;}
+
+  /* ---------- pricing ---------- */
+  .pricing{background:var(--teal-deep);color:#fff;}
+  .pricing h2{color:#fff;}
+  .pricing > .wrap > p{color:#CFE3DC;}
+  .price-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:28px;}
+  .price-card{
+    background:#fff;color:var(--ink);border-radius:var(--radius-lg);padding:26px;
+    display:flex;flex-direction:column;
+  }
+  .price-card.featured{border:3px solid var(--clay);position:relative;}
+  .ribbon{
+    position:absolute;top:-13px;right:22px;background:var(--clay);color:#fff;
+    font-size:12px;font-weight:700;padding:5px 12px;border-radius:999px;
+  }
+  .price-old{font-size:14px;color:var(--ink-soft);text-decoration:line-through;}
+  .price-now{font-family:var(--serif);font-size:32px;color:var(--teal-deep);margin:4px 0 2px;}
+  .price-unit{font-size:13px;color:var(--ink-soft);margin-bottom:16px;}
+  .price-card ul{list-style:none;padding:0;margin:0 0 20px;display:grid;gap:9px;}
+  .price-card li{font-size:13.5px;display:flex;gap:8px;align-items:flex-start;}
+  .price-card li::before{content:"✓";color:var(--sage);font-weight:700;}
+  .cta-block{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    background:var(--teal-deep);color:#fff;font-weight:700;font-size:15px;
+    padding:14px 20px;border-radius:999px;text-decoration:none;margin-top:auto;
+  }
+  .secure-line{font-size:12px;color:#CFE3DC;text-align:center;margin-top:18px;}
+
+  /* ---------- faq ---------- */
+  .faq{background:var(--sand);}
+  .faq-item{
+    border-bottom:1px solid #E3DCC9;padding:18px 0;
+  }
+  .faq-item h3{margin-bottom:6px;}
+  .faq-item p{font-size:14.5px;margin:0;}
+
+  /* ---------- sticky mobile cta ---------- */
+  .sticky-cta{
+    position:fixed;bottom:0;left:0;right:0;
+    background:#fff;border-top:1px solid #E3DCC9;
+    padding:12px 16px;display:none;
+    z-index:50;box-shadow:0 -8px 20px rgba(0,0,0,.06);
+  }
+  .sticky-cta a{
+    display:flex;align-items:center;justify-content:center;gap:8px;
+    background:var(--clay);color:#fff;font-weight:700;font-size:15px;
+    padding:13px;border-radius:999px;text-decoration:none;
+  }
+
+  /* ---------- footer ---------- */
+  footer{background:var(--teal-deep);color:#B9D2C9;padding:36px 0 90px;font-size:12.5px;}
+  footer strong{color:#fff;}
+  footer .foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;}
+  .foot-disclaimer{
+    margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,.15);
+    color:#9FBDB2;line-height:1.6;
+  }
+
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease, transform .5s ease;}
+  .reveal.in{opacity:1;transform:none;}
+
+  @media (max-width:860px){
+    .hero-grid{grid-template-columns:1fr;}
+    .journey-grid{grid-template-columns:1fr 1fr;}
+    .product-grid{grid-template-columns:1fr;}
+    .testi-grid{grid-template-columns:1fr;}
+    .price-grid{grid-template-columns:1fr;}
+    .sticky-cta{display:block;}
+    footer{padding-bottom:100px;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .reveal{opacity:1;transform:none;transition:none;}
+    html{scroll-behavior:auto;}
+  }
+</style>
+</head>
+<body>
+
+<div class="disclaimer-bar wrap" style="max-width:100%;">
+  Antapro Bharata adalah <strong>suplemen herbal</strong> pendamping pemulihan — bukan pengganti pengobatan dokter.
+</div>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="hero-badge-row">
+        <span class="badge">✔ BPOM TR223041501</span>
+        <span class="badge">✔ Halal MUI</span>
+        <span class="badge">✔ Kirim Seluruh Indonesia</span>
+      </div>
+      <h1>Teman Herbal untuk <span>Perjalanan Pemulihan</span> Keluarga Anda</h1>
+      <p class="hero-lead">Antapro Bharata adalah suplemen herbal ekstrak Centella asiatica (Pegagan) yang diformulasikan untuk mendampingi rutinitas harian selama masa pemulihan — digunakan berdampingan dengan terapi dan anjuran dokter, bukan sebagai penggantinya.</p>
+      <a class="cta-primary" href="https://wa.me/6282137101661?text=Halo%2C%20saya%20ingin%20tanya-tanya%20tentang%20Antapro%20Bharata%20untuk%20pemulihan%20keluarga%20saya">
+        💬 Konsultasi Gratis via WhatsApp
+      </a>
+      <div class="cta-sub">Direspon langsung · Ceritakan kondisi keluarga Anda, kami bantu carikan yang sesuai</div>
+      <div class="hero-stats">
+        <div class="hero-stat"><b>500mg</b><span>Ekstrak Pegagan/kapsul</span></div>
+        <div class="hero-stat"><b>50 kapsul</b><span>per botol</span></div>
+        <div class="hero-stat"><b>10.000+</b><span>botol terkirim</span></div>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <img
+        class="product-photo"
+        src="product-antapro-900.jpg"
+        srcset="product-antapro-520.jpg 520w, product-antapro-900.jpg 900w"
+        sizes="(max-width: 860px) 90vw, 420px"
+        width="900" height="900"
+        alt="Kemasan box dan botol Antapro Bharata, suplemen herbal ekstrak Centella asiatica 500mg isi 50 kapsul, BPOM TR223041501, bersertifikat Halal"
+        fetchpriority="high"
+        decoding="async"
+      >
+      <div class="photo-caption">Antapro Bharata — 50 kapsul @500mg · BPOM TR223041501 · Halal MUI</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= JOURNEY / MASALAH ================= -->
+<section class="journey">
+  <div class="wrap">
+    <span class="eyebrow">Memahami Masa Pemulihan</span>
+    <h2>Setiap Fase Pemulihan Butuh Dukungan yang Konsisten</h2>
+    <p style="max-width:60ch;">Tenaga medis umumnya menekankan bahwa 3–6 bulan pertama adalah periode penting untuk konsistensi terapi, nutrisi, dan rutinitas harian. Di fase inilah dukungan yang stabil — termasuk asupan herbal sebagai pendamping — sering menjadi bagian dari rutinitas keluarga.</p>
+    <div class="journey-grid">
+      <div class="journey-step reveal">
+        <div class="phase">Fase 1</div>
+        <h3>Masa Kritis</h3>
+        <p>Penanganan medis intensif menjadi prioritas utama di rumah sakit.</p>
+      </div>
+      <div class="journey-step reveal">
+        <div class="phase">Fase 2</div>
+        <h3>Rehabilitasi Awal</h3>
+        <p>Fisioterapi dan terapi wicara mulai rutin dijalani bersama keluarga.</p>
+      </div>
+      <div class="journey-step reveal">
+        <div class="phase">Fase 3</div>
+        <h3>Rutinitas Harian</h3>
+        <p>Konsistensi latihan, nutrisi, dan dukungan emosional jadi kunci.</p>
+      </div>
+      <div class="journey-step reveal">
+        <div class="phase">Fase 4</div>
+        <h3>Pendampingan Jangka Panjang</h3>
+        <p>Menjaga kualitas hidup dan semangat pasien maupun keluarga.</p>
+      </div>
+    </div>
+    <div class="journey-note reveal">
+      💡 Antapro Bharata diposisikan sebagai <strong>pendamping herbal harian</strong> pada Fase 3 & 4 — bukan pengganti Fase 1 & 2 yang wajib ditangani tenaga medis.
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRODUCT ================= -->
+<section class="product-section">
+  <div class="wrap">
+    <span class="eyebrow">Tentang Produk</span>
+    <h2>Kenapa Keluarga Memilih Antapro Bharata</h2>
+    <div class="product-grid">
+      <ul class="fact-list">
+        <li class="reveal">
+          <div class="fact-icon">🌿</div>
+          <div><b>Ekstrak Centella Asiatica 500mg</b><span>Bahan herbal yang secara tradisional digunakan untuk mendukung sirkulasi.</span></div>
+        </li>
+        <li class="reveal">
+          <div class="fact-icon">📋</div>
+          <div><b>Aturan Pakai Jelas</b><span>3× sehari 2 kapsul, dikonsumsi rutin sesuai anjuran pada kemasan.</span></div>
+        </li>
+        <li class="reveal">
+          <div class="fact-icon">🤝</div>
+          <div><b>Pendamping, Bukan Pengganti</b><span>Diformulasikan untuk digunakan bersamaan dengan terapi & obat dari dokter.</span></div>
+        </li>
+        <li class="reveal">
+          <div class="fact-icon">📦</div>
+          <div><b>Pengiriman Seluruh Indonesia</b><span>JNE, J&T, SiCepat — konsultasi dan pemesanan langsung via WhatsApp.</span></div>
+        </li>
+      </ul>
+      <div>
+        <img
+          src="product-antapro-900.jpg"
+          srcset="product-antapro-520.jpg 520w, product-antapro-900.jpg 900w"
+          sizes="(max-width: 860px) 90vw, 480px"
+          width="900" height="900"
+          alt="Kemasan Antapro Bharata dengan nomor BPOM TR223041501 dan logo Halal MUI"
+          loading="lazy"
+          decoding="async"
+          style="width:100%;border-radius:16px;box-shadow:0 14px 30px -14px rgba(23,63,56,.3);margin-bottom:18px;"
+        >
+        <div class="legal-strip">
+          <div class="legal-chip reveal"><b>BPOM</b>TR223041501 — cek mandiri di cekbpom.pom.go.id</div>
+          <div class="legal-chip reveal"><b>Halal MUI</b>ID33110001294511222</div>
+        </div>
+        <p style="margin-top:18px;font-size:13.5px;">
+          <strong>Catatan penting:</strong> Antapro Bharata adalah produk kategori obat tradisional/suplemen herbal.
+          Produk ini tidak dimaksudkan untuk mendiagnosis, mengobati, menyembuhkan, atau mencegah stroke maupun penyakit lain.
+          Selalu ikuti anjuran dokter yang menangani kondisi Anda.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="testi">
+  <div class="wrap">
+    <span class="eyebrow">Pengalaman Pengguna</span>
+    <h2>Cerita dari Keluarga yang Sudah Mencoba</h2>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Saya rutin memberikan Antapro untuk ibu saya sebagai pendamping harian selama masa pemulihannya. Rutinitasnya jadi lebih teratur, dan kami tetap jalan kontrol ke dokter seperti biasa."</p>
+        <div class="testi-name">Keluarga Fendi</div>
+        <div class="testi-meta">Pengguna sejak botol pertama</div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Enak dikonsumsinya, tidak ada keluhan. Sudah jadi bagian dari rutinitas harian bapak saya bersamaan dengan jadwal fisioterapinya."</p>
+        <div class="testi-name">Keluarga Tosin</div>
+        <div class="testi-meta">Pelanggan berulang</div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Sudah pesan ke-3 kalinya untuk nenek saya. Pengiriman cepat dan CS-nya responsif kalau kami tanya-tanya."</p>
+        <div class="testi-name">Keluarga Bunga</div>
+        <div class="testi-meta">Pembelian ke-3</div>
+      </div>
+    </div>
+    <p class="testi-disclaimer">*Testimoni merupakan pengalaman pribadi pengguna terkait konsumsi produk sebagai suplemen pendamping. Hasil dan pengalaman dapat berbeda untuk setiap individu, dan bukan merupakan klaim pengobatan penyakit.</p>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section class="pricing" id="harga">
+  <div class="wrap">
+    <span class="eyebrow" style="background:rgba(255,255,255,.12);color:#fff;">Penawaran</span>
+    <h2>Mulai Dukungan Harian untuk Keluarga Anda</h2>
+    <p>Pilih paket sesuai kebutuhan pemulihan jangka pendek atau jangka panjang.</p>
+    <div class="price-grid">
+      <div class="price-card reveal">
+        <h3>1 Botol</h3>
+        <div class="price-old">Rp 350.000</div>
+        <div class="price-now">Rp 275.000</div>
+        <div class="price-unit">50 kapsul @500mg</div>
+        <ul>
+          <li>Cocok untuk mencoba rutinitas awal</li>
+          <li>BPOM TR223041501 · Halal MUI</li>
+          <li>Konsultasi gratis via WhatsApp</li>
+        </ul>
+        <a class="cta-block" href="https://wa.me/6282137101661?text=Halo%2C%20saya%20mau%20pesan%20Antapro%20Bharata%201%20botol">Pesan 1 Botol</a>
+      </div>
+      <div class="price-card featured reveal">
+        <div class="ribbon">Paling Dipilih</div>
+        <h3>Paket 2 Botol</h3>
+        <div class="price-old">Rp 700.000</div>
+        <div class="price-now">Rp 510.000</div>
+        <div class="price-unit">Rp 255.000/botol · stok tidak terputus</div>
+        <ul>
+          <li>Hemat Rp 40.000 dibanding satuan</li>
+          <li>Untuk pemakaian rutin berkelanjutan</li>
+          <li>Prioritas pengiriman & follow-up CS</li>
+        </ul>
+        <a class="cta-block" href="https://wa.me/6282137101661?text=Halo%2C%20saya%20mau%20pesan%20Antapro%20Bharata%20paket%202%20botol">Pesan Paket 2 Botol</a>
+      </div>
+    </div>
+    <div class="secure-line">🔒 Transaksi aman · Produk original bersertifikat · COD tersedia di beberapa area</div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="faq">
+  <div class="wrap">
+    <span class="eyebrow">Pertanyaan Umum</span>
+    <h2>Yang Sering Ditanyakan</h2>
+    <div class="faq-item reveal">
+      <h3>Apakah Antapro Bharata bisa dikonsumsi bersamaan obat dokter?</h3>
+      <p>Antapro Bharata diformulasikan sebagai suplemen pendamping harian. Karena setiap kondisi berbeda, sebaiknya informasikan ke dokter yang menangani sebelum menambah suplemen apa pun.</p>
+    </div>
+    <div class="faq-item reveal">
+      <h3>Berapa lama harus dikonsumsi?</h3>
+      <p>Aturan pakai: 3× sehari 2 kapsul, dikonsumsi rutin. Konsistensi penggunaan sesuai anjuran adalah kunci, dan lama konsumsi dapat disesuaikan dengan kebutuhan masing-masing keluarga.</p>
+    </div>
+    <div class="faq-item reveal">
+      <h3>Bagaimana cara memesan?</h3>
+      <p>Klik tombol WhatsApp di halaman ini, ceritakan kebutuhan Anda, dan tim kami bantu proses pemesanan serta pengiriman ke seluruh Indonesia.</p>
+    </div>
+    <div class="faq-item reveal">
+      <h3>Apakah produk ini legal dan aman secara regulasi?</h3>
+      <p>Produk terdaftar BPOM sebagai obat tradisional dengan nomor TR223041501 dan bersertifikat Halal MUI ID33110001294511222. Anda dapat memverifikasi mandiri di cekbpom.pom.go.id.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <strong>Antapro Bharata</strong><br>
+        Suplemen herbal pendamping pemulihan sehari-hari.
+      </div>
+      <div>
+        <strong>Hubungi Kami</strong><br>
+        WhatsApp: 0821-3710-1661
+      </div>
+    </div>
+    <div class="foot-disclaimer">
+      Antapro Bharata adalah produk suplemen herbal terdaftar BPOM (TR223041501) dan Halal MUI (ID33110001294511222).
+      Produk ini <strong>bukan obat</strong> dan tidak dimaksudkan untuk mendiagnosis, mengobati, menyembuhkan, atau mencegah penyakit apa pun, termasuk stroke.
+      Informasi pada halaman ini bersifat umum dan tidak menggantikan konsultasi, diagnosis, atau penanganan medis profesional.
+      Selalu konsultasikan kondisi kesehatan Anda atau keluarga dengan dokter sebelum mengonsumsi suplemen apa pun bersamaan dengan pengobatan yang sedang dijalani.
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a href="https://wa.me/6282137101661?text=Halo%2C%20saya%20ingin%20tanya-tanya%20tentang%20Antapro%20Bharata">💬 Konsultasi Gratis via WhatsApp</a>
+</div>
+
+<script>
+  (function(){
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) { els.forEach(function(e){e.classList.add('in');}); return; }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting){ entry.target.classList.add('in'); io.unobserve(entry.target); }
+      });
+    }, {threshold:0.15});
+    els.forEach(function(e){ io.observe(e); });
+  })();
+</script>
+
+</body>
+</html>
